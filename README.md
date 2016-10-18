@@ -9,7 +9,7 @@ INPUTS
 - two push puttons
 - one locking push button with light for manual operation
 - thermistor
-- 2340 VAC
+- 230 VAC
 
 OUTPUT
 
