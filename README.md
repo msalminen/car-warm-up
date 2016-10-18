@@ -6,13 +6,15 @@ Project file was created using Atmel Studio. This project basically controls reg
 
 INPUTS
 
-two push puttons
-one locking push button with light for manual operation
+- two push puttons
+- one locking push button with light for manual operation
+- thermistor
+- 2340 VAC
 
 OUTPUT
 
-relay controlling outlet
-16x2 LCD display based on HD44780U
+- relay for controlling outlet
+- 16x2 LCD display based on HD44780U
 
 DEPENDENCIES
-AVR-GCC 3.3 or later
+- AVR-GCC 3.3 or later
