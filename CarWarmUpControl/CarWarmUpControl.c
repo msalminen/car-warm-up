@@ -2,7 +2,22 @@
  * CarWarmUpControl.c
  *
  * Created: 03.07.2013 14:35:24
- *  Author: salmarko
+
+    Software for controlling car pre-warmer
+    Copyright (C) 2018  Marko Salminen
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 
 #ifndef F_CPU
@@ -92,7 +107,7 @@ ISR(PCINT_vect)
 // Interrupt handling for timer0 interrupt
 ISR(TIMER1_COMPA_vect)
 {
-	_delay_us(506); //503 -> 507 -> 505 -> 506 ( edist‰‰ ) -> 507 ( j‰t‰tt‰‰ )
+	_delay_us(506); //503 -> 507 -> 505 -> 506 ( edist√§√§ ) -> 507 ( j√§t√§tt√§√§ )
 	if ( button_state.select == ON && !int_flag.selection_tmr) {
 		if ( --selection_counter == 0 )
 			int_flag.selection_tmr = true;
